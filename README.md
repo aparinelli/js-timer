@@ -2,4 +2,4 @@
 Features:
   -velocity slider
   -pause/resume buttons
-  -seconds, minutes and hours
+  -string displayer for seconds, minutes and hours
