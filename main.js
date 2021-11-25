@@ -17,8 +17,16 @@ $resume.click(() => {
     if (loopCheck === false) {
         loop = setInterval(clock, slider.value)
         loopCheck = true
+        $play.text('STOP')
     }
 })
+
+// $resume.click(() => {
+//     if (loopCheck === false) {
+//         loop = setInterval(clock, 1000)
+//         loopCheck = true
+//     }
+// })
 
 function clock() {
     timer++;
@@ -37,16 +45,4 @@ function timerDisplay() {
         ":" +
         (secs < 10 ? "0" + secs : secs)
     )
-}
-
-var slider = document.getElementById('intervalSlider'),
-    sliderVal = document.getElementById('intervalValue');
-
-slider.onchange = function () {
-    sliderVal.innerHTML = slider.value + "ms per loop";
-
-    clearInterval(loop)
-    loop = setInterval(clock, slider.value)
-    loopCheck = true;
-
 }
