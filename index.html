@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <audio id ="audio" src="https://www.soundjay.com/buttons/sounds/beep-07a.mp3" preload="auto">
-  </audio>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,20 +10,18 @@
 
     <script src="libraries/p5.min.js"></script>
     <script src="libraries/p5.sound.min.js"></script>
+    <script type="text/javascript" src="libraries/jquery.min.js"></script>
   </head>
   
   <body>
     <button id="pause">PAUSE</button> 
     <button id="resume">RESUME</button> 
-    <div id="monitor">
-      00:00:00
-    </div>
+    <div id="monitor">00:00:00</div>
     
     <input type="range" min = "0" max="1000" step="100" value="0" class="slider" id="intervalSlider">
-    <div id="intervalValue">0</div>
+    <div id="intervalValue"></div>
     
     <script src="sketch-p5.js"></script>
-    <script type="text/javascript" src="libraries/jquery.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

@@ -1,26 +1,8 @@
-var $play = $('#play'),
-    $pause = $('#pause'),
-    $resume = $('#resume'),
-    $audio = $('#audio')[0]
+var $pause = $('#pause'),
+    $resume = $('#resume')
 
-var loop;
+var timer, secs, mins, hours, loop;
 var loopCheck = false;
-var timer = 0,
-    secs = 0,
-    mins = 0,
-    hours = 0;
-
-$play.click(() => {
-    // $audio.play();
-    if (loopCheck == false) {
-        loop = setInterval(clock, 10)
-        slider.value = 10
-        sliderVal.innerHTML = 10 + "ms per loop"
-
-        loopCheck = true;
-
-    }
-});
 
 $pause.click(() => {
     clearInterval(loop)
@@ -38,7 +20,7 @@ function clock() {
     timer++;
     secs = timer % 60
     mins = Math.floor(timer / 60) % 60
-    hours = Math.floor(timer / 3600) % 24 // timer / 3600 mins = divided by 60 again
+    hours = Math.floor(timer / 3600) % 24 // timer / 3600 = mins divided by 60 again
     timerDisplay()
     sketchDisplay()
 }
