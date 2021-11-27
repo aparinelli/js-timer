@@ -3,6 +3,10 @@ var $play = $('#play'),
     $resume = $('#resume'),
     $audio = $('#audio')[0]
 
+var timer = 0,
+    secs = 0,
+    mins = 0,
+    hours = 0;
 var loop;
 var loopCheck = false;
 var timer = 0,
