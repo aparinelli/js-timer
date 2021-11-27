@@ -1,7 +1,11 @@
 var $pause = $('#pause'),
     $resume = $('#resume')
 
-var timer, secs, mins, hours, loop;
+var timer = 0,
+    secs = 0,
+    mins = 0,
+    hours = 0;
+var loop;
 var loopCheck = false;
 
 $pause.click(() => {
