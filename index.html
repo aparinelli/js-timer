@@ -8,8 +8,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Sketch</title>
+  <title>Timer</title>
 
+<<<<<<< HEAD
     <script src="libraries/p5.min.js"></script>
     <script src="libraries/p5.sound.min.js"></script>
     <script type="text/javascript" src="libraries/jquery.min.js"></script>
@@ -27,3 +28,42 @@
     <script src="main.js"></script>
   </body>
 </html>
+=======
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+</head>
+
+<body>
+  <audio id="beep.mp3">
+    <source src="https://www.soundjay.com/buttons/sounds/button-4.mp3">
+  </audio>
+  
+  <button id="play">PLAY</button>
+
+  <table>
+    <tr>
+      <td>Hours:</td>
+      <td><input id="hoursInput" type="text"></td>
+    </tr>
+    <tr>
+      <td>Minutes:</td>
+      <td><input id="minsInput" type="text"></td>
+    </tr>
+    <tr>
+      <td>Seconds:</td>
+      <td><input id="secsInput" type="text"></td>
+    </tr>
+  </table>
+
+  <div style="font-size:larger;" id="monitor">
+    00:00:00
+  </div>
+
+  <script src="sketch-p5.js"></script>
+  <script type="text/javascript" src="libraries/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
+>>>>>>> 5ee0af7 (Removed clock hands, added new features)
