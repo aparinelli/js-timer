@@ -2,9 +2,10 @@ let theta;
 let r = 100;
 
 function setup() {
-  createCanvas(400, 400);
+  var canvas = createCanvas(400, 400);
+  canvas.parent('sketch-holder')
+  
   angleMode(RADIANS)
-
   background(220);
   translate(width / 2, height / 2)
   sketchDisplay()
