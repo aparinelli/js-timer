@@ -35,14 +35,6 @@ function clock() {
     if (secsLeft == 0) {
         stop()
         beep.play()
-
-        let playCount = 1;
-        beep.addEventListener('ended', function () {
-            if (playCount < 3) {
-                this.play()
-            }
-            playCount++
-        })
     } else {
         secsLeft--;
     }

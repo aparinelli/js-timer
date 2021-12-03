@@ -1,10 +1,18 @@
-html, body {
-  margin: 0;
-
-
-
+#play {
+  display: flex;
+  margin: 0 auto;
+  font-size: 16px;
 }
 
-canvas {
-  display: block;
+table {
+  margin: 0 auto;
+} 
+
+#sketch-holder {
+  margin: 0 auto;
+  width: 400px; /* canvas.width here */
+  text-align: center;
+}
+#monitor {
+  font-size: 30px;
 }
