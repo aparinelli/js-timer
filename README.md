@@ -1,4 +1,4 @@
-# js-timer \
+# js-timer
 Features: \
   -input hours, minutes and seconds \
   -play/stop button \
